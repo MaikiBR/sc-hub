@@ -104,8 +104,9 @@ a {
 
 /* || VIDEO GALLERY */
 .videos-container {
-  width: fit-content;
-  height: fit-content;
+  display: inline-block;
+  position: absolute;
+  float: left;
 }
 
 .gallery {

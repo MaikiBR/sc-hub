@@ -95,7 +95,7 @@ const Sidebar = ({children}) => {
                 <section className="routes">
                     {routes.map((route) => (
                         <NavLink
-                            activeClassName="active"
+                            activeclassname="active"
                             to={route.path} 
                             key={route.name} 
                             className="link"
