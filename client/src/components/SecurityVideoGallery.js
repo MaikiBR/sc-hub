@@ -1,3 +1,4 @@
+import { Badge } from "@mui/material";
 import React, { useState, createRef } from "react";
 import { videoSData } from "../data/videogallery_data";
 
@@ -26,17 +27,25 @@ const VideoGallery = () => {
                     return (
                         <div ref={divRef} className="video" key={index}>
                             {model && <button className="model-close-btn" onClick={() => closeModel()}></button>}
-                            <div className="video-container" onClick={() => openModel()}>
-                                <video
-                                    style={{width: '100%'}}
-                                    autoPlay={model}
-                                    controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                                    poster={item.thumbnail}
-                                    controlsList="nodownload"
-                                >
-                                    <source src={item.video} type="video/mp4"></source>
-                                </video>
-                            </div>
+                            <Badge 
+                                badgeContent="" 
+                                sx={{
+                                    "& .MuiBadge-badge": {
+                                        backgroundColor: "#DD0C1C"
+                                    }
+                            }}>
+                                <div className="video-container" onClick={() => openModel()}>
+                                    <video
+                                        style={{width: '100%'}}
+                                        autoPlay={model}
+                                        controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+                                        poster={item.thumbnail}
+                                        controlsList="nodownload"
+                                    >
+                                        <source src={item.video} type="video/mp4"></source>
+                                    </video>
+                                </div>
+                            </Badge>
                         </div>
                     );
                 })}

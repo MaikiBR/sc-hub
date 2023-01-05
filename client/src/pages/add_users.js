@@ -9,6 +9,8 @@ const AddUsers = () => {
             <br/> <br/>
             <TextField label="Nombre de colaborador" variant="filled" style={ {width: 300} }/>
             <br/> <br/>
+            <TextField label="Nombre de usuario" variant="filled" style={ {width: 300} }/>
+            <br/> <br/>
             <Autocomplete 
                 disablePortal
                 options={sucursales}
@@ -22,7 +24,7 @@ const AddUsers = () => {
                 sx={{ width: 300 }}
                 renderInput={(params) => <TextField {...params} label="Puesto" />}
             />
-            <br/> 
+            <br/>
             <Button 
                 style={{
                     borderRadius: 15,

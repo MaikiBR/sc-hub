@@ -203,16 +203,21 @@ a {
 
 /* || VIDEOTECA */
 .videoteca-container {
-  
+  width: 1280px;
+}
+
+.videoteca-text-container {
+  width: 100%;
+  text-align: center;
 }
 
 .videoteca-cards-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;   
 }
 
 .videoteca-cards-container .videoteca-card {
   flex: 1 1 20%;
-  margin: 5px;  
+  margin: 15px;
 }

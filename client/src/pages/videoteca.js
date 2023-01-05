@@ -1,13 +1,18 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
+import institutionalImage from "../assets/images/ins2.jpg";
+import processImage from "../assets/images/process1.jpg";
+import securityImage from "../assets/images/sec1.jpg";
+
 const Videoteca = () => {
     const navigate = useNavigate();
 
     return (
         <div className="videoteca-container">
             
-            {/* <section className="videoteca-text-container">
+            <div className="videoteca-text-container">
+
                 <p>
                     ¡Bienvenidos!
                 </p>
@@ -37,83 +42,85 @@ const Videoteca = () => {
                     ¡El trabajo en equipo es la habilidad para trabajar juntos hacia una visión común!
                 </p>
                 <br/>
-            </section> */}
+
+            </div>
 
             <div className="videoteca-cards-container">
-                <Card className="videoteca-card" sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
-                        <CardMedia
-                        component="img"
-                        height="140"
-                        image=""
-                        alt="institucional"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Institucional
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Conoce nuestra Filosofía Organizacional y de Seguridad de una manera ágil y clara en los videos 
-                                institucionales de Inducción y Seguridad.
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Button size="small" color="primary" onClick={() => navigate("/videoteca/institution")}>
-                        Ver videos
-                        </Button>
-                    </CardActions>
-                </Card>
-
-                <Card className="videoteca-card" sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
-                        <CardMedia
-                        component="img"
-                        height="140"
-                        image=""
-                        alt="procesos"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Procesos
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Aprende nuestros procesos de trabajo de una manera visual y fácil.
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Button size="small" color="primary" onClick={() => navigate("/videoteca/process")}>
-                        Ver videos
-                        </Button>
-                    </CardActions>
-                </Card>
-
-                <Card className="videoteca-card" sx={{ maxWidth: 345 }}>
-                    <CardActionArea>
-                        <CardMedia
-                        component="img"
-                        height="140"
-                        image=""
-                        alt="seguridad"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Seguridad
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Conoce nuestra Cultura de Seguridad y respeta los lineamientos de prevención para el 
-                                cuidado de tu integración física y la de tus compañeros. ¡Valorarte es Cuidarte! 
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Button size="small" color="primary" onClick={() => navigate("/videoteca/security")}>
-                        Ver videos
-                        </Button>
-                    </CardActions>
-                </Card>
                 
+                    <Card className="videoteca-card" sx={{ maxWidth: 345, backgroundColor: '#001935', color: 'white'}}>
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            height="190"
+                            image={institutionalImage}
+                            alt="institucional"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Institucional
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" sx={{ color: 'white'}}>
+                                    Conoce nuestra Filosofía Organizacional y de Seguridad de una manera ágil y clara en los videos 
+                                    institucionales de Inducción y Seguridad.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" onClick={() => navigate("/videoteca/institution")}>
+                            Ver videos
+                            </Button>
+                        </CardActions>
+                    </Card>
+
+                    <Card className="videoteca-card" sx={{ maxWidth: 345, backgroundColor: '#001935', color: 'white'}}>
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            height="190"
+                            image={processImage}
+                            alt="procesos"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Procesos
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" sx={{ color: 'white'}}>
+                                    Aprende nuestros procesos de trabajo de una manera visual y fácil.
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" onClick={() => navigate("/videoteca/process")}>
+                            Ver videos
+                            </Button>
+                        </CardActions>
+                    </Card>
+
+                    <Card className="videoteca-card" sx={{ maxWidth: 345, backgroundColor: '#001935', color: 'white'}}>
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            height="190"
+                            image={securityImage}
+                            alt="seguridad"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Seguridad
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" sx={{ color: 'white'}}>
+                                    Conoce nuestra Cultura de Seguridad y respeta los lineamientos de prevención para el 
+                                    cuidado de tu integración física y la de tus compañeros. ¡Valorarte es Cuidarte! 
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" onClick={() => navigate("/videoteca/security")}>
+                            Ver videos
+                            </Button>
+                        </CardActions>
+                    </Card>
+
             </div>
         </div>
                  
