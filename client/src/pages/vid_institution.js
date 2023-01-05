@@ -1,6 +1,6 @@
-import VideoGallery from "../components/VideoGallery";
+import VideoGallery from "../components/InstitutionVideoGallery";
 
-const Videos = () => {
+const VidInstitucional = () => {
     return (
         <div className="videos-container">
             <VideoGallery />  
@@ -9,4 +9,4 @@ const Videos = () => {
     );
 }
 
-export default Videos;
+export default VidInstitucional;

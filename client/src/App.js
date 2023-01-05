@@ -5,8 +5,14 @@ import Sidebar from './components/Sidebar';
 
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
-import Videos from './pages/videos';
-import Exams from './pages/exams';
+import Results from './pages/results';
+import AddUsers from './pages/add_users';
+import AddEvaluations from './pages/add_evaluations';
+import Evaluations from './pages/evaluations';
+import Videoteca from './pages/videoteca';
+import VidSeguridad from './pages/vid_security';
+import VidProcesos from './pages/vid_process';
+import VidInstitucional from './pages/vid_institution';
 
 const SidebarLayout = () => (
   <>
@@ -23,8 +29,18 @@ function App() {
           <Routes>
             <Route element={<SidebarLayout />}>
               <Route path='/dashboard' element={<Dashboard />}/>
-              <Route path='/videos' element={<Videos />}/>
-              <Route path='/exams' element={<Exams />}/>
+
+              <Route path='/videoteca' element={<Videoteca />}/>
+              <Route path='/videoteca/security' element={<VidSeguridad />}/>
+              <Route path='/videoteca/process' element={<VidProcesos />}/>
+              <Route path='/videoteca/institution' element={<VidInstitucional />}/>
+              
+              <Route path='/evaluations' element={<Evaluations />}/>
+              
+              <Route path='/results' element={<Results />}/>
+              <Route path='/addUsers' element={<AddUsers />}/>
+              <Route path='/addEvaluations' element={<AddEvaluations />}/>
+
               <Route path='*' element={<>not found</>}/>
             </Route>
             <Route path='/' element={<Login />}/>

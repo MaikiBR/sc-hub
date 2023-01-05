@@ -1,4 +1,4 @@
-import { faBorderAll, faFileLines, faFileVideo } from '@fortawesome/free-solid-svg-icons'
+import { faBorderAll, faCirclePlay, faFileCirclePlus, faFileLines, faMedal, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 
 export const routes = [
     {
@@ -7,13 +7,38 @@ export const routes = [
         icon: faBorderAll,
     },
     {
-        path: '/videos',
-        name: 'Videos',
-        icon: faFileVideo,
+        path: '/videoteca',
+        name: 'Videoteca',
+        icon: faCirclePlay,
     },
     {
-        path: '/exams',
-        name: 'Exámenes',
+        path: '/evaluations',
+        name: 'Evaluaciones',
         icon: faFileLines,
     },
+    /* SOLO ADMIN */
+    {
+        path: '/results',
+        name: 'Resultados',
+        icon: faMedal,
+    },
+    {
+        path: '/addUsers',
+        name: 'Alta de Usuarios',
+        icon: faUserPlus,
+    },
+    {
+        path: '/addEvaluations',
+        name: 'Alta de Evaluaciones',
+        icon: faFileCirclePlus,
+    },
+
 ];
+
+/*
+VIDEOS:
+Institucionales
+Procesos
+Seguridad
+
+*/

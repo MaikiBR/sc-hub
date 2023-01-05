@@ -6,10 +6,13 @@
 
 .main-container {
   display: flex;
+  background-color: #e9d8b3;
+  font-family: system-ui;
 }
 
 main {
   padding: 10px;
+  font-family: system-ui;
 }
 
 .title {
@@ -24,8 +27,9 @@ a {
 
 /* || SIDEBAR */
 .sidebar {
-  background-color: rgb(0, 7, 61);
-  color: white;
+  /* background-color: rgb(0, 7, 61); */
+  background-color: #001935;
+  color: whitesmoke; 
   height: 100vh;
   overflow: hidden;
 }
@@ -79,7 +83,7 @@ a {
 
 .link {
   display: flex;
-  color: white;
+  color: whitesmoke;
   gap: 10px;
   padding: 5px 10px;
   border-right: 4px solid transparent;
@@ -87,14 +91,16 @@ a {
 }
 
 .link:hover {
-  border-right: 4px solid white;
+  border-right: 4px solid whitesmoke;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  background: rgb(45, 51, 89);
+  /*background: rgb(45, 51, 89);*/
+  background: #DD0C1C;
 }
 
 .active {
-  border-right: 4px solid white;
-  background: rgb(45, 51, 89);
+  border-right: 4px solid whitesmoke;
+  /*background: rgb(45, 51, 89);*/
+  background: #DD0C1C;
 }
 
 .link-text {
@@ -193,4 +199,20 @@ a {
   box-sizing: border-box;
   padding: 1.5rem 0 1.5rem;
   margin: 2rem auto;
+}
+
+/* || VIDEOTECA */
+.videoteca-container {
+  
+}
+
+.videoteca-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+
+.videoteca-cards-container .videoteca-card {
+  flex: 1 1 20%;
+  margin: 5px;  
 }

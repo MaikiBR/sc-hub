@@ -1,5 +1,5 @@
 import React, { useState, createRef } from "react";
-import { videoData } from "../data/videogallery_data";
+import { videoIData } from "../data/videogallery_data";
 
 // Video player
 // import { DefaultPlayer as Video } from 'react-html5video';
@@ -9,9 +9,9 @@ const VideoGallery = () => {
     const [model, setModel] = useState(false);
     return (
         <>
-            <div className="title" style={{textAlign: 'center'}}>Videos</div>
+            <div className="title" style={{textAlign: 'center'}}>Institucional</div>
             <div className="gallery">
-                {videoData.map((item, index)=>{
+                {videoIData.map((item, index)=>{
                     let divRef = createRef(null);
                     const openModel = () => {
                         divRef.current.classList.remove('video');
