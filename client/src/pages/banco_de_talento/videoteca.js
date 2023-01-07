@@ -1,9 +1,9 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-import institutionalImage from "../assets/images/ins2.jpg";
-import processImage from "../assets/images/process1.jpg";
-import securityImage from "../assets/images/sec1.jpg";
+import institutionalImage from "../../assets/images/ins2.jpg";
+import processImage from "../../assets/images/process1.jpg";
+import securityImage from "../../assets/images/sec1.jpg";
 
 const Videoteca = () => {
     const navigate = useNavigate();

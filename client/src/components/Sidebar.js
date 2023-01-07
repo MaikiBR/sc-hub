@@ -21,7 +21,7 @@ const Sidebar = ({children}) => {
             },
         },
         show: {
-            width: "180px",
+            width: "230px",
             padding: "5px 15px",
             opacity: 1,
             transition: {
@@ -51,7 +51,7 @@ const Sidebar = ({children}) => {
         <div className='main-container'>
             <motion.div 
                 animate={{
-                    width: isOpen ? "240px": "40px", 
+                    width: isOpen ? "280px": "40px", 
                     
                     transition: {
                         duration: 0.5,
@@ -73,7 +73,7 @@ const Sidebar = ({children}) => {
                             SC Hub
                         </motion.h1>)}
                     <div className="bars">
-                        <FontAwesomeIcon icon={faBars} onClick={toggle}/>
+                        <FontAwesomeIcon icon={faBars} onClick={toggle} cursor="pointer"/>
                     </div>
                 </div>
                 <div className="search">

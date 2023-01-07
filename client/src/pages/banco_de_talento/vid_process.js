@@ -1,4 +1,4 @@
-import VideoGallery from "../components/ProcessVideoGallery";
+import VideoGallery from "../../components/ProcessVideoGallery";
 
 const VidProcesos = () => {
     return (
