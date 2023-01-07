@@ -32,7 +32,6 @@ const SidebarLayout = () => (
 
 function App() {
   return (
-    <>
       <BrowserRouter>
           <Routes>
             <Route element={<SidebarLayout />}>
@@ -68,7 +67,6 @@ function App() {
             <Route path='/' element={<Login />}/>
           </Routes>
       </BrowserRouter>
-    </>
   );
 }
 

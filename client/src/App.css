@@ -112,7 +112,7 @@ a {
 .videos-container {
   display: inline-block;
   position: absolute;
-  float: left;
+  /* float: left; */
 }
 
 .gallery {
