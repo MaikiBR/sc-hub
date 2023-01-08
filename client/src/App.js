@@ -21,6 +21,11 @@ import PrevencionLaboral from './pages/prevencion_laboral/main';
 import ClimaOrg from './pages/clima_org/main';
 import SeguridadLaboral from './pages/seguridad_laboral/main';
 import PanelRH from './pages/panel_de_control_rh/main';
+import Videoteca from './pages/banco_de_talento/videoteca';
+import Evaluations from './pages/banco_de_talento/evaluations';
+import VidInstitucional from './pages/banco_de_talento/vid_institution';
+import VidSeguridad from './pages/banco_de_talento/vid_security';
+import VidProcesos from './pages/banco_de_talento/vid_process';
 
 const SidebarLayout = () => (
   <>
@@ -45,7 +50,18 @@ function App() {
               //#region BancoDeTalento
 
               <Route path='/banco-de-talento' element={<BancoDeTalento />}/>
+              
               <Route path='/banco-de-talento/conocimiento' element={<Conocimiento />}/>
+
+              <Route path='/banco-de-talento/conocimiento/videoteca' element={<Videoteca />}/>
+              {/* <Route path='/banco-de-talento/conocimiento/videoteca/institution' element={<VidInstitucional />}/>
+              <Route path='/banco-de-talento/conocimiento/videoteca/security' element={<VidSeguridad />}/>
+              <Route path='/banco-de-talento/conocimiento/videoteca/process' element={<VidProcesos />}/> */}
+
+              {/* <Route path='/banco-de-talento/conocimiento/manuales-operativos' element={<Videoteca />}/>
+              <Route path='/banco-de-talento/conocimiento/manuales-de-productos' element={<Videoteca />}/> */}
+              <Route path='/banco-de-talento/conocimiento/evaluaciones' element={<Evaluations />}/>
+
               <Route path='/banco-de-talento/desempeño' element={<Performance />}/>
               <Route path='/banco-de-talento/productividad' element={<Productividad />}/>
               
