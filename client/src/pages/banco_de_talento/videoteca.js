@@ -47,7 +47,7 @@ const Videoteca = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary" onClick={() => navigate("")}>
+                                <Button size="small" color="primary" onClick={() => navigate("/banco-de-talento/conocimiento/videoteca/institution")}>
                                 Ver videos
                                 </Button>
                             </CardActions>
@@ -82,7 +82,7 @@ const Videoteca = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary" onClick={() => navigate("")}>
+                                <Button size="small" color="primary" onClick={() => navigate("/banco-de-talento/conocimiento/videoteca/process")}>
                                 Ver videos
                                 </Button>
                             </CardActions>
@@ -118,7 +118,7 @@ const Videoteca = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary" onClick={() => navigate("")}>
+                                <Button size="small" color="primary" onClick={() => navigate("/banco-de-talento/conocimiento/videoteca/security")}>
                                 Ver videos
                                 </Button>
                             </CardActions>

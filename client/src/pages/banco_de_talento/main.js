@@ -22,8 +22,8 @@ const BancoTalento = () => {
                 <Grid item>
                     <Card
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            height: 300,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -42,11 +42,9 @@ const BancoTalento = () => {
                                     Conocimiento
                                 </Typography>
                                 <Typography variant="body2" color="whitesmoke">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Estandarizar los procesos y productos requiere estandarizar los conocimientos de nuestro
+                                equipo de trabajo.
+                                ¡Tú eres parte esencial!
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -56,8 +54,8 @@ const BancoTalento = () => {
                 <Grid item>
                 <Card
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            height: 300,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -76,11 +74,9 @@ const BancoTalento = () => {
                                     Desempeño
                                 </Typography>
                                 <Typography variant="body2" color="whitesmoke">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                La retroalimentación es pieza clave para entender si nuestro desempeño cumple con las
+                                expectativas del puesto.
+                                ¡Una evaluación te orienta a mejorar tu desempeño!
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -90,8 +86,8 @@ const BancoTalento = () => {
                 <Grid item>
                 <Card
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            height: 300,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -110,11 +106,9 @@ const BancoTalento = () => {
                                     Productividad
                                 </Typography>
                                 <Typography variant="body2" color="whitesmoke">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Contar con metas y objetivos es esencial para el éxito de una empresa. Tú debes conocer las
+                                metas y objetivos de tu área y puesto.
+                                ¡Enfocar tu conocimiento y desempeño al logro de resultados te hace PRODUCTIVO!
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

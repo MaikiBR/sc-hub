@@ -23,8 +23,8 @@ const Conocimiento = () => {
                 <Grid item>
                     <Card
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            weight: 400,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -43,11 +43,10 @@ const Conocimiento = () => {
                                     Videoteca
                                 </Typography>
                                 <Typography variant="body2" color="whitesmoke">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Te invitamos a ingresar a los videos institucionales, de procesos o de seguridad que
+                                    apliquen a tu puesto y aplicar las evaluaciones para acreditar que tienes pleno conocimiento
+                                    de ellos.
+                                    ¡El trabajo en equipo es la habilidad para trabajar juntos hacia una visión común!
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -57,8 +56,8 @@ const Conocimiento = () => {
                 <Grid item>
                 <Card
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            weight: 400,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -77,11 +76,9 @@ const Conocimiento = () => {
                                     Manuales Operativos
                                 </Typography>
                                 <Typography variant="body2" color="whitesmoke">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Entiende la operación óptima mediante nuestros “Manuela de Procedimientos”, diseñados
+                                    para apoyarte en la integración a a tu puesto.
+                                    ¡Aprenderlos es el primer paso a tu productividad!
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -91,8 +88,8 @@ const Conocimiento = () => {
                 <Grid item>
                 <Card
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            weight: 400,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -111,11 +108,9 @@ const Conocimiento = () => {
                                     Manuales de Producto
                                 </Typography>
                                 <Typography variant="body2" color="whitesmoke">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Conoce los estándares de calidad de nuestros productos para tener más éxito en la venta y
+                                    mayor control en su manejo.
+                                    ¡Nuestro producto es nuestra ventaja competitiva!
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

@@ -54,9 +54,9 @@ function App() {
               <Route path='/banco-de-talento/conocimiento' element={<Conocimiento />}/>
 
               <Route path='/banco-de-talento/conocimiento/videoteca' element={<Videoteca />}/>
-              {/* <Route path='/banco-de-talento/conocimiento/videoteca/institution' element={<VidInstitucional />}/>
+              <Route path='/banco-de-talento/conocimiento/videoteca/institution' element={<VidInstitucional />}/>
               <Route path='/banco-de-talento/conocimiento/videoteca/security' element={<VidSeguridad />}/>
-              <Route path='/banco-de-talento/conocimiento/videoteca/process' element={<VidProcesos />}/> */}
+              <Route path='/banco-de-talento/conocimiento/videoteca/process' element={<VidProcesos />}/>
 
               {/* <Route path='/banco-de-talento/conocimiento/manuales-operativos' element={<Videoteca />}/>
               <Route path='/banco-de-talento/conocimiento/manuales-de-productos' element={<Videoteca />}/> */}
