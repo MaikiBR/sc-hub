@@ -1,5 +1,6 @@
 .DS_STORE
 client/src/assets/videos
+client/src/assets/images
 node_modules
 scripts/flow/*/.flowconfig
 .flowconfig
