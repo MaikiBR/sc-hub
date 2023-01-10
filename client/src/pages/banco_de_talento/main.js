@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "
 import { useNavigate } from "react-router-dom";
 import conocimientoImg from "../../assets/images/conocimiento.png"
 import performanceImg from "../../assets/images/performance.png"
-import productividadImg from "../../assets/images/productividad.png"
+import productividadImg from "../../assets/images/productividd.png"
 import logo from "../../assets/images/logos/Logo RH HR Hub by Super Cream-03.png"
 
 
