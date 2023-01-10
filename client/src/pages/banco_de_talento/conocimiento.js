@@ -5,13 +5,22 @@ import manProductoImg from "../../assets/images/manualproducto.png"
 import manOperativoImg from "../../assets/images/manualoperativo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../assets/images/logos/Logo RH HR Hub by Super Cream-03.png"
+
 
 const Conocimiento = () => {
     const navigate = useNavigate();
 
     return (
         <div className="conocimiento-container">
-            <Chip style={{ backgroundColor: '#001935', color: '#e9d8b3' }} label="Evaluaciones" icon={<FontAwesomeIcon icon={faFile} color="#e9d8b3" />} onClick={() => navigate("/banco-de-talento/conocimiento/evaluaciones")}/>
+            
+            <div className="logo-container-conoc">
+                <img 
+                    src={logo}
+                    alt="HR Hub Logo"
+                />
+                <Chip className="evaluations-btn" style={{ backgroundColor: '#001935', color: '#e9d8b3' }} label="Evaluaciones" icon={<FontAwesomeIcon icon={faFile} color="#e9d8b3" />} onClick={() => navigate("/banco-de-talento/conocimiento/evaluaciones")}/>
+            </div>
             <Grid
                 container
                 direction="row"

@@ -77,10 +77,9 @@ function App() {
               <Route path='/results' element={<Results />}/>
               <Route path='/addUsers' element={<AddUsers />}/>
               <Route path='/addEvaluations' element={<AddEvaluations />}/>
-
-              <Route path='*' element={<>not found</>}/>
             </Route>
             <Route path='/' element={<Login />}/>
+            <Route path='*' element={<>not found</>}/>
           </Routes>
       </BrowserRouter>
   );

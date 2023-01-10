@@ -74,7 +74,7 @@ const Sidebar = ({children}) => {
                             exit="hidden"
                             className="logo"
                         >
-                            SC Hub
+                            HR Hub
                         </motion.h1>)}
                     <div className="bars">
                         <FontAwesomeIcon icon={faBars} onClick={toggle} cursor="pointer"/>

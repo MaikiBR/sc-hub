@@ -1,7 +1,8 @@
-import background from "../assets/images/Background/FondoRHLogos.jpg"
+import background from "../assets/images/background/FondoRHLogos.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock, faRightToBracket, faUser } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom"
+import logo from "../assets/images/logos/Logo RH HR Hub by Super Cream-03.png"
 
 const Login = () => {
     const navigate = useNavigate();
@@ -9,7 +10,13 @@ const Login = () => {
     return (
         <div className="login-container" style={{ backgroundImage: `url(${background})` }}>
             <div className="box">
-                <h2>HR Hub | by SuperCream</h2>
+                {/* <h2>HR Hub | by SuperCream</h2> */}
+                <div className="logo-container">
+                    <img
+                        src={logo}
+                        alt="HR Hub Logo"
+                    />
+                </div>
                 <form>
                     <div className="inputBox">
                         <input type="text" name="" required />

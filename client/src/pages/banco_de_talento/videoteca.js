@@ -4,12 +4,20 @@ import { useNavigate } from "react-router-dom";
 import institutionalImage from "../../assets/images/ins2.jpg";
 import processImage from "../../assets/images/process1.jpg";
 import securityImage from "../../assets/images/sec1.jpg";
+import logo from "../../assets/images/logos/Logo RH HR Hub by Super Cream-03.png"
+
 
 const Videoteca = () => {
     const navigate = useNavigate();
 
     return (
         <div className="videoteca-container">
+            <div className="logo-container-bt">
+                <img 
+                    src={logo}
+                    alt="HR Hub Logo"
+                />
+            </div>
             <Grid
                 container
                 direction="row"

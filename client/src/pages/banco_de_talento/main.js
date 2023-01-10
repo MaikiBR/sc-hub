@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import conocimientoImg from "../../assets/images/conocimiento.png"
 import performanceImg from "../../assets/images/performance.png"
 import productividadImg from "../../assets/images/productividad.png"
+import logo from "../../assets/images/logos/Logo RH HR Hub by Super Cream-03.png"
+
 
 const BancoTalento = () => {
     const navigate = useNavigate();
@@ -10,7 +12,12 @@ const BancoTalento = () => {
     return (
         <div className="bancotalento-container">
             {/* <div className="title">Banco de Talento</div>    */}
-
+            <div className="logo-container-bt">
+                <img 
+                    src={logo}
+                    alt="HR Hub Logo"
+                />
+            </div>
             <Grid
                 container
                 direction="row"

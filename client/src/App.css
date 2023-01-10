@@ -229,7 +229,10 @@ a {
   transform: translate(-50%, -50%);
   width: 400px;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(202, 116, 116, 0.8); */
+  background: rgb(202, 116, 116);
+  /* background: rgba(0, 0, 0, 0.8); */
+  /* background: rgba(182, 78, 78, 0.8); */
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -307,3 +310,37 @@ a {
   box-shadow: 0 0 0 2em transparent;
 }
 
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo-container img {
+  width: 70%;
+  height: 70%;
+}
+
+.logo-container-conoc {
+  text-align: spac;
+  margin-bottom: 10px;
+}
+
+.logo-container-conoc img {
+  width: 15%;
+  height: 15%;
+  float: right;
+}
+
+.evaluations-btn {
+  display: inline-block;
+}
+
+.logo-container-bt {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.logo-container-bt img {
+  width: 15%;
+  height: 15%;
+}
