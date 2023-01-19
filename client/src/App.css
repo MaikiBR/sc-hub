@@ -6,10 +6,12 @@
 
 .main-container {
   display: flex;
-  background-color: #e9d8b3;
+  /* background-color: #e9d8b3; */
+  background-image: url('assets/images/background/FondoSuperCream.jpg');
+  background-position: center;
+  background-size: cover;
   font-family: system-ui;
   overflow-y: hidden;
-  
 }
 
 main {
