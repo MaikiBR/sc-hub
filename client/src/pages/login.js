@@ -2,7 +2,7 @@ import background from "../assets/images/background/FondoRHLogos.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock, faRightToBracket, faUser } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom"
-import logo from "../assets/images/logos/Logo RH HR Hub by Super Cream-03.png"
+import logo from "../assets/images/logos/Logo RH para Web-04.png"
 
 const Login = () => {
     const navigate = useNavigate();

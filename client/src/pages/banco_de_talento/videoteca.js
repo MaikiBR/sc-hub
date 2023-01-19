@@ -29,8 +29,8 @@ const Videoteca = () => {
                 <Grid item>               
                     <Card 
                         sx={{ 
-                            maxWidth: 400, 
-                            maxHeight: 400,
+                            width: 400, 
+                            height: 400,
                             backgroundColor: "#001935",
                             color: "#e9d8b3",
                             boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -65,8 +65,8 @@ const Videoteca = () => {
                     <Grid item>  
                         <Card 
                             sx={{ 
-                                maxWidth: 400, 
-                                maxHeight: 400,
+                                width: 400, 
+                                height: 400,
                                 backgroundColor: "#001935",
                                 color: "#e9d8b3",
                                 boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
@@ -100,8 +100,8 @@ const Videoteca = () => {
                     <Grid item>
                         <Card 
                             sx={{ 
-                                maxWidth: 400, 
-                                maxHeight: 400,
+                                width: 400, 
+                                height: 400,
                                 backgroundColor: "#001935",
                                 color: "#e9d8b3",
                                 boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
