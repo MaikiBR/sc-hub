@@ -5,9 +5,7 @@ import Sidebar from './components/Sidebar';
 
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
-import Results from './pages/results';
-import AddUsers from './pages/add_users';
-import AddEvaluations from './pages/add_evaluations';
+import AdminManager from './pages/admin_manager';
 import BancoDeTalento from './pages/banco_de_talento/main';
 import Conocimiento from './pages/banco_de_talento/conocimiento';
 import Performance from './pages/banco_de_talento/desempeño';
@@ -73,10 +71,7 @@ function App() {
               <Route path='/seguridad-laboral' element={<SeguridadLaboral />}/>
               <Route path='/panel-de-control-rh' element={<PanelRH />}/>
 
-
-              <Route path='/results' element={<Results />}/>
-              <Route path='/addUsers' element={<AddUsers />}/>
-              <Route path='/addEvaluations' element={<AddEvaluations />}/>
+              <Route path='/admin-manager' element={<AdminManager />}/>
             </Route>
             <Route path='/' element={<Login />}/>
             <Route path='*' element={<>not found</>}/>

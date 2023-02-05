@@ -1,5 +1,5 @@
 import { faFaceLaughBeam, faHandshake } from '@fortawesome/free-regular-svg-icons';
-import { faBank, faBorderAll, faCirclePlay, faDiagramProject, faFileCirclePlus, faFileLines, faGauge, faHelmetSafety, faMagnifyingGlass, faMedal, faScaleBalanced, faSignature, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faBank, faBorderAll, faCirclePlay, faDiagramProject, faFileCirclePlus, faFileLines, faGauge, faHelmetSafety, faMagnifyingGlass, faMedal, faScaleBalanced, faSignature, faUserGear, faUserPlus, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 export const routes = [
     {
@@ -60,21 +60,10 @@ export const routes = [
     
     /* SOLO ADMIN */
     {
-        path: '/results',
-        name: 'Resultados',
-        icon: faMedal,
+        path: '/admin-manager',
+        name: 'Admin Manager ',
+        icon: faUserGear,
     },
-    {
-        path: '/addUsers',
-        name: 'Alta de Usuarios',
-        icon: faUserPlus,
-    },
-    {
-        path: '/addEvaluations',
-        name: 'Alta de Evaluaciones',
-        icon: faFileCirclePlus,
-    },
-
 ];
 
 /*

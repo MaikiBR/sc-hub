@@ -363,3 +363,41 @@ a {
   width: 90%;
   height: 90%;
 }
+
+/* ADMIN MANAGER */
+.admin-manager-container, .admin-manager-content, .adduser-form{
+  width: 100%;
+  height: 100%;
+}
+
+.adduser-form {
+  display: grid;
+  justify-content: center;
+  gap: 25px;
+}
+
+.datatable {
+  width: 100%;
+  height: 70vh;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #48577A;
+  color: whitesmoke;
+}
+
+.MuiDataGrid-footerContainer {
+  background-color: #48577A;
+}
+
+.MuiTablePagination-toolbar, .MuiIconButton-root {
+  color: whitesmoke !important; 
+}
+
+.MuiSvgIcon-root {
+  color: #001935;
+}
+
+ 
+
+

@@ -7,9 +7,9 @@ import { NavLink } from 'react-router-dom';
 import { routes } from '../data/sidebar_data';
 
 const Sidebar = ({children}) => {
-    require('react-dom');
-    window.React2 = require('react');
-    console.log(window.React1 === window.React2);
+    // require('react-dom');
+    // window.React2 = require('react');
+    // console.log(window.React1 === window.React2);
 
     const [isOpen, setIsOpen] = useState(false);
 

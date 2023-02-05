@@ -40,7 +40,7 @@ const Videoteca = () => {
                             <CardActionArea disabled>
                                 <CardMedia
                                 component="img"
-                                height="190"
+                                sx={{ height: "200px" }}
                                 image={institutionalImage}
                                 alt="institucional"
                                 />
@@ -76,7 +76,7 @@ const Videoteca = () => {
                             <CardActionArea disabled>
                                 <CardMedia
                                 component="img"
-                                height="190"
+                                sx={{ height: "230px" }}
                                 image={processImage}
                                 alt="procesos"
                                 />
@@ -110,8 +110,8 @@ const Videoteca = () => {
                         >
                             <CardActionArea disabled>
                                 <CardMedia
+                                sx={{ height: "200px" }}
                                 component="img"
-                                height="190"
                                 image={securityImage}
                                 alt="seguridad"
                                 />
