@@ -29,22 +29,22 @@ export const UsersTable = () => {
         {
             field: 'fullname',
             headerName: 'Nombre del colaborador',
-            width: 250
+            width: 300
         },
         {
             field: 'username',
             headerName: 'Usuario',
-            width: 150
+            width: 200
         },
         {
-            field: 'sucursal',
+            field: 'suc_name',
             headerName: 'Sucursal',
             width: 200
         },
         {
-            field: 'puesto',
+            field: 'jobpos_name',
             headerName: 'Puesto',
-            width: 200
+            width: 300
         },
     ];
 

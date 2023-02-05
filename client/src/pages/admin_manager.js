@@ -1,9 +1,8 @@
 import { faIdCard, faKey, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Autocomplete, Box, Button, InputAdornment, Tab, Tabs, TextField, Typography } from "@mui/material";
-import { useState } from "react";
-import { sucursales } from "../data/addusers_data";
-import { puestos } from "../data/addusers_data";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { UsersTable } from "../data/userstable_data";
 
 const AdminManager = () => {
@@ -12,23 +11,52 @@ const AdminManager = () => {
         setTabIndex(newTabIndex);
     };
 
+    const [sucursales, setSucursales] = useState([]);
+    
+    useEffect(() => {
+        axios.get('http://localhost:5000/sucursales')
+            .then((response) => {
+                setSucursales(response.data);
+                //console.log(response.data);
+            })
+            .catch(error => console.log(error));
+    }, []);
+
+    const [puestos, setPuestos] = useState([]);
+    const [firstSelection, setFirstSelection] = useState('');
+
+    const handleFirstSelection = async (event, value) => {
+        const sucursal_id = value.suc_id;
+        setFirstSelection(sucursal_id);
+        setSucursalId(sucursal_id)
+        setPuestos(await getPuestos(sucursal_id))
+    }
+
+    const getPuestos = async (value) => {
+        const response = await axios.get(`http://localhost:5000/puestos/${value}`);
+        //console.log(response.data);
+        return response.data;
+    }
+
     const [fullname, setFullname] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [sucursal, setSucursal] = useState("");
-    const [puesto, setPuesto] = useState("");
+    const [sucursal_id, setSucursalId] = useState("");
+    const [jobpos_id, setJobPosId] = useState("");
+
+
 
     const addUser = async e => {
         e.preventDefault();
         try {
-            const body = { fullname, username, password, sucursal, puesto } ;
+            const body = { username, password, fullname, sucursal_id, jobpos_id } ;
             const response = fetch("http://localhost:5000/agregarUsuario", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
             });
 
-            console.log(response);
+            //console.log(response);
         } catch (err) {
             console.log(err.message);
         }
@@ -108,21 +136,20 @@ const AdminManager = () => {
                             <Autocomplete
                                 sx={{ width:"550px" }} 
                                 options={sucursales}
-                                // getOptionLabel={(sucursales) => sucursales.suc_name}
-                                // getOptionSelected={(sucursales, value) => sucursales.suc_id === value.id}
-                                renderInput={(params) => <TextField {...params} label="Seleccionar sucursal..." variant="filled" required/>}
-                                onChange={(event, newValue) => {
-                                    setSucursal(newValue.id);
-                                }}
+                                getOptionLabel={(sucursales) => sucursales.suc_name}
+                                getOptionSelected={(sucursales, value) => sucursales.suc_id === value.id}
+                                renderInput={(params) => <TextField {...params} label="Seleccionar sucursales..." variant="filled" required/>}
+                                onChange={handleFirstSelection}
                             />
                             <Autocomplete
                                 sx={{ width:"550px" }} 
                                 options={puestos}
-                                // getOptionLabel={(puestos) => puestos.jobpos_name}
-                                // getOptionSelected={(puestos, value) => puestos.jobpos_id === value.id}
+                                getOptionLabel={(puestos) => puestos.jobpos_name}
+                                getOptionSelected={(puestos, value) => puestos.jobpos_id === value.id}
+                                disabled={firstSelection === ""}
                                 renderInput={(params) => <TextField {...params} label="Seleccionar puesto..." variant="filled" required/>}
                                 onChange={(event, newValue) => {
-                                    setPuesto(newValue.id);
+                                    setJobPosId(newValue.jobpos_id);
                                 }}
                             />
                             <Button
