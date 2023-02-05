@@ -24,6 +24,8 @@ import Evaluations from './pages/banco_de_talento/evaluations';
 import VidInstitucional from './pages/banco_de_talento/vid_institution';
 import VidSeguridad from './pages/banco_de_talento/vid_security';
 import VidProcesos from './pages/banco_de_talento/vid_process';
+import { useState } from 'react';
+import useToken from './hooks/useToken';
 
 const SidebarLayout = () => (
   <>
@@ -33,7 +35,23 @@ const SidebarLayout = () => (
   </>
 )
 
+function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem('token');
+  const userToken = JSON.parse(tokenString);
+  return userToken?.token
+}
+
 function App() {
+  const { token, setToken } = useToken();
+
+  if (!token) {
+    return <Login setToken={setToken}/>
+  }
+
   return (
       <BrowserRouter>
           <Routes>
@@ -74,7 +92,7 @@ function App() {
               <Route path='/admin-manager' element={<AdminManager />}/>
             </Route>
             <Route path='/' element={<Login />}/>
-            <Route path='*' element={<>not found</>}/>
+            {/* <Route path='*' element={<>not found</>}/> */}
           </Routes>
       </BrowserRouter>
   );

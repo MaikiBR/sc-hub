@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { AnimatePresence, motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
 import { routes } from '../data/sidebar_data';
+import { Button, IconButton } from '@mui/material';
 
 const Sidebar = ({children}) => {
     // require('react-dom');
@@ -14,6 +15,25 @@ const Sidebar = ({children}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    function logout() {
+        const token = localStorage.removeItem('token');
+
+        fetch("/logout", {
+            method: "POST",
+            headers: {
+                "Authorization": `Bearer ${token}`
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to logout!");
+            }
+        })
+        .catch(error => {
+            console.error(error);
+        })
+    }
 
     const inputAnimation = {
         hidden: {
@@ -122,6 +142,7 @@ const Sidebar = ({children}) => {
                             </AnimatePresence>
                         </NavLink>
                     ))}
+                    <IconButton onClick={logout} title="Cerrar sesión"><FontAwesomeIcon icon={faArrowRightFromBracket}/></IconButton>
                 </section>
             </motion.div>
             <main>
