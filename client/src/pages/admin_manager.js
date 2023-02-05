@@ -1,5 +1,6 @@
-import { Autocomplete, Box, Button, Tab, Tabs, TextField, Typography } from "@mui/material";
-import { color } from "@mui/system";
+import { faIdCard, faKey, faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Autocomplete, Box, Button, InputAdornment, Tab, Tabs, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 import { sucursales } from "../data/addusers_data";
 import { puestos } from "../data/addusers_data";
@@ -61,24 +62,45 @@ const AdminManager = () => {
                         <form className="adduser-form" onSubmit={addUser}>
                             <TextField
                                 sx={{ width:"550px" }} 
-                                label="Nombre de colaborador" 
+                                label="Ingresar nombre completo de colaborador..." 
                                 variant="filled"
+                                InputProps={{
+                                    endAdornment: (
+                                      <InputAdornment position="end">
+                                        <FontAwesomeIcon icon={faIdCard} />
+                                      </InputAdornment>
+                                    ),
+                                }}
                                 value={fullname}
                                 onChange={e => setFullname(e.target.value)}
                                 required
                             />
                             <TextField
                                 sx={{ width:"550px" }} 
-                                label="Nombre de usuario" 
+                                label="Ingresar nombre de usuario..." 
                                 variant="filled"
                                 value={username}
+                                InputProps={{
+                                    endAdornment: (
+                                      <InputAdornment position="end">
+                                        <FontAwesomeIcon icon={faUser} />
+                                      </InputAdornment>
+                                    ),
+                                }}
                                 onChange={e => setUsername(e.target.value)}
                                 required 
                             />
                             <TextField
                                 sx={{ width:"550px" }} 
-                                label="Contraseña" 
+                                label="Ingresar contraseña..." 
                                 variant="filled"
+                                InputProps={{
+                                    endAdornment: (
+                                      <InputAdornment position="end">
+                                        <FontAwesomeIcon icon={faKey} />
+                                      </InputAdornment>
+                                    ),
+                                }}
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}
                                 required 
@@ -86,12 +108,22 @@ const AdminManager = () => {
                             <Autocomplete
                                 sx={{ width:"550px" }} 
                                 options={sucursales}
-                                renderInput={(params) => <TextField {...params} label="Sucursal" variant="filled" required/>}
+                                // getOptionLabel={(sucursales) => sucursales.suc_name}
+                                // getOptionSelected={(sucursales, value) => sucursales.suc_id === value.id}
+                                renderInput={(params) => <TextField {...params} label="Seleccionar sucursal..." variant="filled" required/>}
+                                onChange={(event, newValue) => {
+                                    setSucursal(newValue.id);
+                                }}
                             />
                             <Autocomplete
                                 sx={{ width:"550px" }} 
                                 options={puestos}
-                                renderInput={(params) => <TextField {...params} label="Puesto" variant="filled" required/>}
+                                // getOptionLabel={(puestos) => puestos.jobpos_name}
+                                // getOptionSelected={(puestos, value) => puestos.jobpos_id === value.id}
+                                renderInput={(params) => <TextField {...params} label="Seleccionar puesto..." variant="filled" required/>}
+                                onChange={(event, newValue) => {
+                                    setPuesto(newValue.id);
+                                }}
                             />
                             <Button
                                 type="submit"
@@ -122,58 +154,3 @@ const AdminManager = () => {
 }
 
 export default AdminManager;
-
-{/* <form className="adduser-form" onSubmit={addUser}>
-                <TextField 
-                    label="Nombre de colaborador" 
-                    variant="filled" 
-                    style={ {width: 300} }
-                    value={fullname}
-                    onChange={e => setFullname(e.target.value)}
-                />
-
-                <TextField 
-                    label="Nombre de usuario" 
-                    variant="filled" 
-                    style={ {width: 300} }
-                    value={username}
-                    onChange={e => setUsername(e.target.value)}
-                />
-
-                <TextField 
-                    label="Contraseña" 
-                    variant="filled" 
-                    style={ {width: 300} }
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                />
-
-                <Autocomplete 
-                    disablePortal
-                    options={sucursales}
-                    sx={{ width: 300 }}
-                    renderInput={(params) => <TextField {...params} label="Sucursal" />}
-                /> 
-
-                <Autocomplete 
-                    disablePortal
-                    options={puestos}
-                    sx={{ width: 300 }}
-                    renderInput={(params) => <TextField {...params} label="Puesto" />}
-                />
-                
-                <button
-                    type="submit" 
-                    style={{
-                        borderRadius: 15,
-                        backgroundColor: "#001935",
-                        width: "120px",
-                        height: "40px",
-                        color: "white",
-                        cursor: "pointer"
-                    }}
-
-                >
-                    REGISTRAR
-                </button>
-            </form>    */}
